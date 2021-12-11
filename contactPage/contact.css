@@ -1,0 +1,36 @@
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 50%;
+  /* The width is the width of the web page */
+  margin: 10px auto 50px auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.table-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form {
+  width: 50%;
+  margin: 10px auto;
+  border: 0.1px solid rgb(189, 187, 187);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 968px) {
+  #map {
+    width: 90%;
+  }
+  .table-container {
+    width: 90%;
+  }
+  .form {
+    width: 90%;
+  }
+}
