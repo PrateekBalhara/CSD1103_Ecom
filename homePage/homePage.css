@@ -94,7 +94,7 @@
 }
 
 .explore-text {
-  margin: 200px 0px 40px 0px;
+  margin: 20% 1em 1em 1em;
   text-align: center;
 }
 
@@ -150,6 +150,7 @@
 .clothing-store {
   font-family: "Smooch", cursive;
 }
+
 /* Header start */
 .header{
   display: flex;
