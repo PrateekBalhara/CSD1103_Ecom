@@ -78,7 +78,7 @@
 
 .homepage-image-and-text {
   width: 95%;
-  margin: 0 auto;
+  margin: 1em 0em 1em 1em;
   color: rgb(1, 10, 6);
 }
 
@@ -150,8 +150,37 @@
 .clothing-store {
   font-family: "Smooch", cursive;
 }
+/* Header start */
+.header{
+  display: flex;
+  width: 100%;
+  align-self: flex-end;
+  justify-content: space-between;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin: 1em 1em 1em 3em;
+}
+
+.icons{
+  width: 30px;
+  height: 30px;
+  margin: 0.25em 1.25em 0.25em 0.25em;
+}
+/* Header end */
+.flex-item{
+  align-self: flex-end;
+}
 
 /* footer */
+.footer.flex-container{
+  display: flex;
+  justify-content: center;
+}
+
 .footer-basic {
   padding: 40px 0;
   background-color: #ffffff;
