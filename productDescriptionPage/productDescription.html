@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Description</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="productDescription.css">
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header" style="box-shadow: 0 2px 8px #8CC6EC;">
+            <div class="logo">
+              <a href="../homePage/homepage.html">
+                <img src="../assets/StoreLogo.png" alt="Store Logo">
+              </a>
+            </div>
+            <div class="company_name flex-item">
+              <h1 class="ui large header">The Clothing Store</h1>
+            </div>
+            <div class="side-icons flex-item">
+              <img class="icons" src="../assets/user.png" alt="user icon">
+              <img class="icons" src="../assets/shopping-cart.png" alt="shopping cart icon">
+            </div>
+          </div>
+        <!-- MAIN CLASS -->
+        <div class="main">
+            <!-- Breadcrumb -->
+            <div class="ui breadcrumb">
+                <a class="section">Clothing</a>
+                <span class="divider">/</span>
+                <a class="section">Men</a>
+                <span class="divider">/</span>
+                <a class="section">Formal</a>
+                <span class="divider">/</span>
+                <div class="active section">Suits</div>
+            </div>
+            
+            <div class="flex-container">
+                <!-- Product Images -->
+                <div class="product-image">
+                    <div class="flex-container">
+                        <div class="product-image">
+                            <img class="ui medium fluid image" src="../assets/productDescription/suit1.jpg" alt="Product Image">
+                        </div>
+                        <div class="product-image">
+                            <img class="ui medium fluid image" src="../assets/productDescription/suit1.jpg" alt="Product Image">
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div  class="product-image">
+                            <img class="ui medium fluid image" src="../assets/productDescription/suit1.jpg" alt="Product Image">
+                        </div>
+                        <div class="product-image">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <div class="product-name">
+                        <div class="ui large header" >Louis Philippe</div>
+                        <div class="content">Men Black Striped Slim-Fit Suit</div>
+                        <br>
+                        <div><del>$500</del> $400 <span style="color:#049C84;">($100 OFF)</span></div>
+                    </div>
+                    <br>
+                    <!-- Sizing Chart -->
+                    <div class="size-widget">
+                        <div class="size flex-container">
+                            <h2 class="ui medium header" style="width: 20%;">SELECT SIZE </h2>
+                            <span style="color: #8CC6EC; font-style: italic; ">&emsp; &emsp; Size Chart ></span>
+                        </div>
+                        
+                        <img class="ui fluid medium image" style="margin: -3px;" src="../assets/productDescription/SizeChart.png" alt="Size Chart">
+                    </div>
+                    <!-- Buy Now and wishlist buttons -->
+                    <div class="flex-container">
+                        <button class="ui primary button">
+                            <i class="icon cart"></i>
+                            BUY NOW
+                        </button>
+                        <button class="ui button">
+                            <i class="icon heart"></i>
+                            WISHLIST
+                        </button>
+                    </div>
+                    <!-- Shipping Options -->
+                    <div class="shipping-widget">
+                        <div class="flex-container">
+                            <span class="ui medium header" style="width: 25%;">SHIPPING OPTIONS </span>
+                            <img style="width: 30px; height: 30px;" class="ui tiny fluid image" src="../assets//productDescription/icons8-shipping-64.png" alt="Shipping Icon">
+                        </div>
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Enter your Postal Code">
+                            <i class="circular search link icon"></i>
+                        </div>
+                        <br><span class="ui small text"> Enter postal code to check delivery time & Pay on Delivery Availability<br><br></span>
+                        <p>
+                            Orginal Products<br>
+                            Pay on delivery might be available<br>
+                            Easv 7 days returns and exchanges<br>
+                        </p>
+                    </div>
+                    <!-- Product Details -->
+                    <div class="product-detail-widget">
+                        <div class="flex-container">
+                            <span class="ui medium header flex-item" style="width: 25%;">PRODUCT DETAILS </span>
+                            <img style="width: 30px; height: 30px;" class="ui tiny fluid image" src="../assets/productDescription/details.png" alt="Shipping Icon">
+                        </div>
+                        <p class="ui small heading"> 
+                            <strong>Black Semi-Formal Suit</strong><br>
+                            Black and grey striped slim-fit casual suit, has a notched lapel, single-breasted with double button closures, an attached lining and a double vented back hem.<br>
+                            Black and grey solid mid-rise striped trousers, has a zip fly with a button and a hook-and-bar closure, four pockets, a waistband with belt loops, adjustable hems
+                            <br>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Footer -->
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="icon ion-social-instagram"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank"><i class="icon ion-social-snapchat"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="icon ion-social-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a>
+                </div>
+                
+                <ul class="footer flex-container">
+                    <li><a href="../contactPage/contact.html">Contact</a></li>
+                    <li><a href="mailto:prateekbalhara21@gmail.com">Write to Us</a></li>
+                    <li><a href="../aboutUsPage/aboutUs.html">About</a></li>
+                    <li><a href="https://policies.google.com/privacy?hl=en-US" target="_blank">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Company Name © 2018</p>
+            </footer>
+        </div>
+    </body>
+</html>
