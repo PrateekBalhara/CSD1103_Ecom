@@ -1,14 +1,18 @@
-* {
-margin: 0;
-padding: 0;
-font-family: "DM Sans", sans-serif;
+body{
+  font-family: 'Times New Roman', Times, serif;
 }
+
 /* header */
 .nav-logo {
 height: 100px;
 width: 100px;
 }
 /* footer */
+
+.footer.flex-container{
+  justify-content: center;
+}
+
 .footer-basic {
     padding: 40px 0;
     background-color: #ffffff;
@@ -70,6 +74,9 @@ width: 100px;
   }
   /* footer ends */
 
+.main{
+  margin:0.25em 0 0 1.25em;
+}
 .shoppingcart-icon {
 height: 50px;
 width: 50px;
@@ -86,6 +93,7 @@ align-items: center;
     display: flex;
 }
 
+
 .product-description{
     align-self: flex-start;
     width: 50vw;
@@ -98,17 +106,49 @@ align-items: center;
     padding: 5px;
 }
 
+.product-name{
+  margin: 1em 0 0.5em 0;
+}
+
+.product-detail-widget{
+  margin: 1em 0 0.1em 0;
+}
+
+
 /* Semantic UI CSS */
 .column img{
     background-color: aliceblue;
     
 }
 
-.heading2{
+.large.header{
     color:#001a16;
     font-style: bold;
     font-size: 20;
     font-family: 'Times New Roman', Times, serif;
     align-self: flex-end;
+    margin: 0.1em 0 0 0;
 }
 
+.medium.header{
+  color:#001a16;
+  font-style: bold;
+  font-size: 16;
+  font-family: 'Times New Roman', Times, serif;
+  align-self: flex-end;
+}
+
+.small.header{
+  color:#001a16;
+  font-style: bold;
+  font-size: 12;
+  font-family: 'Times New Roman', Times, serif;
+  align-self: flex-end;
+
+}
+
+.ui.button{
+  margin: 1em .5em 1em 0;
+  width: 40%;
+  line-height: 2em;
+}

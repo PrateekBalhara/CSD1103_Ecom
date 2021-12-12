@@ -21,7 +21,9 @@
                 <img class="shoppingcart-icon" src="../assets/productDescription/shoppingCart.jpg" alt="logo">
             </div>
         </div>
-        <!-- Breadcrumb -->
+        <!-- MAIN CLASS -->
+        <div class="main">
+            <!-- Breadcrumb -->
         <div class="ui breadcrumb">
             <a class="section">Clothing</a>
             <span class="divider">/</span>
@@ -54,19 +56,23 @@
             </div>
             <div class="product-description">
                 <div class="product-name">
-                    <div class="heading2">Louis Philippe</div>
+                    <div class="ui large header" >Louis Philippe</div>
                     <div class="content">Men Black Striped Slim-Fit Suit</div>
                     <br>
                     <div><del>$500</del> $400 <span style="color:#049C84;">($100 OFF)</span></div>
                 </div>
                 <br>
                 <!-- Sizing Chart -->
-                <div class="size">
-                    <div class="heading2">SELECT SIZE &emsp; <span style="color: #8CC6EC ;">Size Chart ></span></div>
-                    <img class="ui fluid medium image" src="../assets/productDescription/SizeChart.png" alt="Size Chart">
+                <div class="size-widget">
+                    <div class="size flex-container">
+                        <h2 class="ui medium header">SELECT SIZE </h2>
+                        <span style="color: #8CC6EC; font-style: italic; ">&emsp; &emsp; Size Chart ></span>
+                    </div>
+                    
+                    <img class="ui fluid medium image" style="margin: -3px;" src="../assets/productDescription/SizeChart.png" alt="Size Chart">
                 </div>
                 <!-- Buy Now and wishlist buttons -->
-                <div class="buynow-widget">
+                <div class="flex-container">
                     <button class="ui primary button">
                         <i class="icon cart"></i>
                         BUY NOW
@@ -79,14 +85,14 @@
                 <!-- Shipping Options -->
                 <div class="shipping-widget">
                     <div class="flex-container">
-                        <span class="heading2">SHIPPING OPTIONS </span>
+                        <span class="ui medium header" style="margin: 0.5em 0.25em 0.5em 0;">SHIPPING OPTIONS </span>
                         <img style="width: 30px; height: 30px;" class="ui tiny fluid image" src="../assets//productDescription/icons8-shipping-64.png" alt="Shipping Icon">
                     </div>
                     <div class="ui icon input">
                         <input type="text" placeholder="Enter your Postal Code">
                         <i class="circular search link icon"></i>
                     </div>
-                    <br>Please enter postal code to check delivery time & Pay on Delivery Availability<br><br>
+                    <br><span class="ui small text"> Enter postal code to check delivery time & Pay on Delivery Availability<br><br></span>
                     <p>
                         Orginal Products<br>
                         Pay on delivery might be available<br>
@@ -96,28 +102,32 @@
                 <!-- Product Details -->
                 <div class="product-detail-widget">
                     <div class="flex-container">
-                        <span class="heading2">PRODUCT DETAILS </span>
+                        <span class="ui medium header" style="margin: 0.5em 0.25em 0.25em 0;">PRODUCT DETAILS </span>
                         <img style="width: 30px; height: 30px;" class="ui tiny fluid image" src="../assets/productDescription/details.png" alt="Shipping Icon">
                     </div>
-                    <p class="heading2"> Black Semi-Formal Suit</p>
-                    Black and grey striped slim-fit casual suit, has a notched lapel, single-breasted with double button closures, an attached lining and a double vented back hem.
-                    <br>Black and grey solid mid-rise striped trousers, has a zip fly with a button and a hook-and-bar closure, four pockets, a waistband with belt loops, adjustable hems
-                    <br><br>
+                    <p class="ui small heading"> 
+                        <strong>Black Semi-Formal Suit</strong><br>
+                        Black and grey striped slim-fit casual suit, has a notched lapel, single-breasted with double button closures, an attached lining and a double vented back hem.<br>
+                        Black and grey solid mid-rise striped trousers, has a zip fly with a button and a hook-and-bar closure, four pockets, a waistband with belt loops, adjustable hems
+                        <br>
+                    </p>
                 </div>
 
             </div>
         </div>
+        </div>
+        
         
         <!-- Footer -->
         <div class="footer-basic">
             <footer>
                 <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Home</a></li>
-                    <li class="list-inline-item"><a href="#">Services</a></li>
-                    <li class="list-inline-item"><a href="#">About</a></li>
-                    <li class="list-inline-item"><a href="#">Terms</a></li>
-                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <ul class="footer flex-container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
                 <p class="copyright">Company Name © 2018</p>
             </footer>
