@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
     />
     <link
@@ -31,7 +37,35 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <div id="simpleModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome Attit</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">You will love shopping online.</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Header-->
+
     <div class="header" style="box-shadow: 0 2px 8px #8cc6ec">
       <div class="logo">
         <a href="#">
@@ -81,7 +115,9 @@
           />
         </div>
         <div class="centered">
-          <p>Get your desired clothing here.</p>
+          <p style="text-align: center" data-aos="fade-up">
+            Get your desired clothing here.
+          </p>
         </div>
 
         <div class="centered-categories">
@@ -129,76 +165,91 @@
           <button class="add-product-button">View</button>
         </div>
       </a>
-      <div class="product-item" data-aos="fade-in">
-        <img
-          src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="product"
-          class="product-image"
-        />
-        <p class="product-price">$100</p>
-        <h2 class="product-title">Denim Jacket</h2>
-        <button class="add-product-button">Add to cart</button>
-      </div>
-      <div class="product-item" data-aos="fade-in">
-        <img
-          src="https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80"
-          alt="product"
-          class="product-image"
-        />
-        <p class="product-price">$100</p>
-        <h2 class="product-title">Tshirt</h2>
-        <button class="add-product-button">Add to cart</button>
-      </div>
-      <div class="product-item" data-aos="fade-in">
-        <img
-          src="https://images.unsplash.com/photo-1485218126466-34e6392ec754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-          alt="product"
-          class="product-image"
-        />
-        <p class="product-price">$100</p>
-        <h2 class="product-title">Adventure</h2>
-        <button class="add-product-button">Add to cart</button>
-      </div>
-      <div class="product-item" data-aos="fade-in">
-        <img
-          src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="product"
-          class="product-image"
-        />
-        <p class="product-price">$100</p>
-        <h2 class="product-title">Kids Jacket</h2>
-        <button class="add-product-button">Add to cart</button>
-      </div>
-      <div class="product-item" data-aos="fade-in">
-        <img
-          src="https://images.unsplash.com/photo-1581497396202-5645e76a3a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="product"
-          class="product-image"
-        />
-        <p class="product-price">$100</p>
-        <h2 class="product-title">Bath Robes</h2>
-        <button class="add-product-button">Add to cart</button>
-      </div>
-      <div class="product-item" data-aos="fade-in">
-        <img
-          src="https://images.unsplash.com/photo-1519766400364-8824dc3c4e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="product"
-          class="product-image"
-        />
-        <p class="product-price">$100</p>
-        <h2 class="product-title">Pant</h2>
-        <button class="add-product-button">Add to cart</button>
-      </div>
-      <div class="product-item" data-aos="fade-in">
-        <img
-          src="https://images.unsplash.com/photo-1582142306909-195724d33ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="product"
-          class="product-image"
-        />
-        <p class="product-price">$100</p>
-        <h2 class="product-title">Skirt</h2>
-        <button class="add-product-button">Add to cart</button>
-      </div>
+      <a href="../productDescriptionPage/productDescription.html">
+        <div class="product-item" data-aos="fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="product"
+            class="product-image"
+          />
+          <p class="product-price">$100</p>
+          <h2 class="product-title">Denim Jacket</h2>
+          <button class="add-product-button">Add to cart</button>
+        </div>
+      </a>
+      <a href="../productDescriptionPage/productDescription.html">
+        <div class="product-item" data-aos="fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80"
+            alt="product"
+            class="product-image"
+          />
+          <p class="product-price">$100</p>
+          <h2 class="product-title">Tshirt</h2>
+          <button class="add-product-button">Add to cart</button>
+        </div>
+      </a>
+
+      <a href="../productDescriptionPage/productDescription.html">
+        <div class="product-item" data-aos="fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1485218126466-34e6392ec754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+            alt="product"
+            class="product-image"
+          />
+          <p class="product-price">$100</p>
+          <h2 class="product-title">Adventure</h2>
+          <button class="add-product-button">Add to cart</button>
+        </div>
+      </a>
+      <a href="../productDescriptionPage/productDescription.html">
+        <div class="product-item" data-aos="fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="product"
+            class="product-image"
+          />
+          <p class="product-price">$100</p>
+          <h2 class="product-title">Kids Jacket</h2>
+          <button class="add-product-button">Add to cart</button>
+        </div>
+      </a>
+      <a href="../productDescriptionPage/productDescription.html">
+        <div class="product-item" data-aos="fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1581497396202-5645e76a3a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="product"
+            class="product-image"
+          />
+          <p class="product-price">$100</p>
+          <h2 class="product-title">Bath Robes</h2>
+          <button class="add-product-button">Add to cart</button>
+        </div>
+      </a>
+      <a href="../productDescriptionPage/productDescription.html">
+        <div class="product-item" data-aos="fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1519766400364-8824dc3c4e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="product"
+            class="product-image"
+          />
+          <p class="product-price">$100</p>
+          <h2 class="product-title">Pant</h2>
+          <button class="add-product-button">Add to cart</button>
+        </div>
+      </a>
+      <a href="../productDescriptionPage/productDescription.html">
+        <div class="product-item" data-aos="fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1582142306909-195724d33ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="product"
+            class="product-image"
+          />
+          <p class="product-price">$100</p>
+          <h2 class="product-title">Skirt</h2>
+          <button class="add-product-button">Add to cart</button>
+        </div>
+      </a>
     </div>
     <!-- Footer -->
     <div class="footer-basic">
@@ -236,6 +287,26 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="./homepage.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        OpenBootstrapPopup();
+      };
+      function OpenBootstrapPopup() {
+        $("#simpleModal").modal("show");
+      }
     </script>
   </body>
 </html>
